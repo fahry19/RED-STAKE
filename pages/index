@@ -1,0 +1,20 @@
+import StakeCard from "../components/StakeCard";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold text-primary mb-8">HLS Staking (Red Theme)</h1>
+      <StakeCard />
+      <div className="flex justify-around mt-8 w-full max-w-md text-center">
+        <div className="bg-dark p-4 rounded">
+          <p>Your Staked HLS</p>
+          <p className="text-2xl font-bold text-primary">6.152 HLS</p>
+        </div>
+        <div className="bg-dark p-4 rounded">
+          <p>Total Value Locked</p>
+          <p className="text-2xl font-bold text-primary">6.152 HLS</p>
+        </div>
+      </div>
+    </div>
+  );
+}
