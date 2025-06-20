@@ -1,0 +1,29 @@
+export default function StakeCard() {
+  return (
+    <div className="bg-dark p-8 rounded-xl w-full max-w-md mx-auto shadow-lg">
+      <h2 className="text-2xl font-bold mb-4 text-primary">Stake HLS</h2>
+      <div className="mb-4">
+        <label className="block mb-2">HLS amount</label>
+        <input
+          type="number"
+          placeholder="0.0"
+          className="w-full p-3 rounded bg-black text-white border border-primary"
+        />
+        <p className="text-sm mt-2">Available: 6.5340381792765407 HLS</p>
+      </div>
+      <div className="mb-4">
+        <label className="block mb-2">You will receive</label>
+        <input
+          type="text"
+          placeholder="0.0"
+          readOnly
+          className="w-full p-3 rounded bg-black text-white border border-gray-600"
+        />
+      </div>
+      <p className="text-sm mb-4">Exchange rate: 1 HLS = 1 stHLS</p>
+      <button className="w-full p-3 rounded bg-primary text-black font-bold">
+        Enter an amount
+      </button>
+    </div>
+  )
+}
